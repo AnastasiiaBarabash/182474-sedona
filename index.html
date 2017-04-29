@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/index-style.css">
   </head>
   <body class="container">
     <header>
-      <ul class="header-list-left">
+        <a href="#" class="index-logo"></a>
+      <ul class="header-list">
         <li><a href="#">Информация   </a></li>
         <li><a href="#">Фото и видео </a></li>
-      </ul>
-      <a href="#" class="index-logo"></a>
-      <ul class="header-list-right">
         <li><a href="#">Карта штата  </a></li>
         <li><a>         Гостиницы    </a></li>
       </ul>
       <div class="main-picture">
-        <img src="http://placehold.it/150x100" width="" height="" alt="Welcome to Sedona">
+        <img src="img/index/main.jpg" width="" height="" alt="Welcome to Sedona">
       </div>
     </header>
     <main>
@@ -24,89 +23,108 @@
         <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p> <!-- або <p> -->
       </div>
-      <div class="real-city">
-        <div class="benefit">
+      <div class="benefit picture-right">
+        <div class="benefit-description">
           <h2>Настоящий городок</h2>
           <p>- №1 -</p>
           <p>Седона не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <div class="real-city-right">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Sedona city">
+        <div class="benefit-image">
+          <img src="img/index/reason1.jpg" width="" height="" alt="Sedona city">
         </div>
       </div>
-        <section class="features">
-          <div class="features-item">
+        <div class="features">
+          <section class="features-item">
+            <div class="icon lodging-icon"></div>
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-          <div class="features-item">
+          </section>
+          <section class="features-item">
+            <div class="icon food-icon"></div>
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-          <div class="features-item">
+          </section>
+          <section class="features-item">
+            <div class="icon souvenirs-icon"></div>
             <h2>Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
+          </section>
+        </div>
+        <div class="benefit picture-left">
+          <div class="benefit-image">
+            <img src="img/index/reason2.jpg" width="" height="" alt="The devil's bridge">
           </div>
-        </section>
-        <div class="devil's-bridge">
-          <div class="devil's-bridge-left">
-            <img src="http://placehold.it/150x100" width="" height="" alt="The devil's bridge">
-          </div>
-          <div class="benefit">
+          <div class="benefit-description">
             <h2>Там есть мост дьявола</h2>
             <p>- №2 -</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <section class="benefits">
-          <div class="benefits-item">
+        <div class="benefits">
+          <section class="benefits-item">
             <h2>Небольшая площадь</h2>
             <p>- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="benefits-item">
+          </section>
+          <section class="benefits-item">
             <h2>Красивая дорога</h2>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="benefits-item">
+          </section>
+          <section class="benefits-item">
             <h2>Мало туристов</h2>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </section>
+          </section>
+        </div>
         <div class="index-booking">
-          <div class="title">
+          <div class="subject">
             <span>Заинтересовались?</span>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <div class="booking-form">
+              <div class="searching">Поиск гостиниц в Седоне</div>
+              <form method="get" action="https://echo.htmlacademy.ru">
+                <label for="arrival-date">Дата заезда:</label>
+                <div>
+                  <input id="arrival-date"   type="text" name="arrival"   value="24 апреля 2016">
+                  <button class="picButtons calendar-btn">
+                    <!--<img class="calendar" src="./img/index/calendar.png">-->
+                  </button>
+                </div>
+                <label for="departure-date">Дата выезда:</label>
+                <div>
+                  <input id="departure-date" type="text" name="departure" value="4 июля 2016">
+                  <button class="picButtons calendar-btn"></button>
+                </div>
+                <label for="adults">Взрослые:</label>
+                <div>
+                  <button class="picButtons minus"></button>
+                  <input id="adults" type="number" name="adults" value="2">
+                  <button class="picButtons plus"></button>
+                </div>
+                <label for="children">Дети:</label>
+                <div>
+                  <button class="picButtons minus"></button>
+                  <input id="children" type="number" name="children" value="0">
+                  <button class="picButtons plus"></button>
+                </div>
+                <button class="find-btn" type="submit">Найти</button>
+              </form>
+            </div>
           </div>
           <div class="map">
-            <img src="http://placehold.it/150x100" width="" height="" alt="Map">
-          </div>
-          <div class="booking-form">
-            <div>Поиск гостиниц в Седоне</div>
-            <form method="get" action="https://echo.htmlacademy.ru">
-              <label>Дата заезда: <input type="text"   name="arrival"   value="24 апреля 2016"> </label>
-              <label>Дата выезда: <input type="text"   name="departure" value="4 июля 2016">    </label>
-              <label>Взрослые:    <input type="number" name="adults"    value="2">              </label>
-              <label>Дети:        <input type="number" name="children"  value="0">              </label>
-              <button class="find-btn" type="submit">
-                Найти
-                <!-- Хочу вложить сюда ссылку <a href="#"></a>, потому, что мне кажется, что эта кнопка
-                и есть ссылкой на результат обработки формы. Но валидатор ругается. Нужно? Можно?-->>
-              </button>
-            </form>
+            <img src="img/index/map.jpg" width="" height="" alt="Map">
           </div>
         </div>
     </main>
     <footer>
-      <section class="tag">#visitsedona</section>
-      <section class="socials">
-        <a class="social-btn-twitter"  href="#">Твиттер</a>
-        <a class="social-btn-facebook" href="#">Фейсбук</a>
-        <a class="social-btn-youtube"  href="#">Ютуб   </a>
+      <section class="tag">#visitSEDONA</section>
+      <section>
+        <a class="social-btn twitter"  href="#"></a>
+        <a class="social-btn facebook" href="#"></a>
+        <a class="social-btn youtube"  href="#"></a>
       </section>
-      <section class="copyrigh">
+      <section class="copyright">
         <span>website by</span>
         <a class="btn" href="https://htmlacademy.ru"></a>
       </section>

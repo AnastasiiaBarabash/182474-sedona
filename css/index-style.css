@@ -1,0 +1,100 @@
+body {
+  font-size: 21px;
+  line-height: 21px;
+  color: black;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.features-item h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: black;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header-list li {
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.index-logo {
+  background: #81b3d2 url("../img/index/logo.png") no-repeat;
+  position: absolute;
+  left: 571px;
+  top: 0px;
+  width: 138px;
+  height: 70px;
+}
+.icon {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+}
+
+.lodging-icon {
+  background-image: url("../img/index/lodging-icon.png");
+}
+
+.food-icon {
+  background-image: url("../img/index/food-icon.png");
+}
+
+.souvenirs-icon {
+  background-image: url("../img/index/souvenirs-icon.png");
+}
+
+/* form buttons */
+.picButtons{
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background: transparent center center no-repeat;
+}
+
+.calendar-btn {
+  background-image: url('../img/index/calendar.png');
+}
+
+.minus {
+  background-image: url('../img/index/-.png');
+}
+
+.plus {
+  background-image: url('../img/index/+.png');
+}
+
+footer section,
+.copyright span,
+.btn,
+.social-btn {
+  display: inline-block;
+}
+
+.social-btn {
+  width: 46px;
+  height: 48px;
+  background: #81b3d2 center center no-repeat;
+}
+
+.twitter {
+  background-image: url("../img/index/twitter.png");
+}
+
+.facebook {
+  background-image: url("../img/index/facebook.png");
+}
+
+.youtube {
+  background-image: url("../img/index/youtube.png");
+}
+
+.btn {
+  background: transparent url("../img/index/html-academy.png") center center no-repeat;
+  width: 113px;
+  height: 39px;
+}

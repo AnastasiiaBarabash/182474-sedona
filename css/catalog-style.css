@@ -47,14 +47,14 @@ font-family: 'PT Sans', sans-serif;
 }
 
 .fake-checkbox {
-  background: transparent url("../img/catalog/checkbox.png") center center no-repeat;
+  background: transparent url("../img/catalog/checkbox.png") left center no-repeat;
   display: inline-block;
   width: 26px;
   height: 22px;
 }
 
 .fake-checkbox.checked {
-  background: transparent url("../img/catalog/checked.png") center center no-repeat;
+  background: transparent url("../img/catalog/checked.png") left center no-repeat;
 }
 
 .found div,

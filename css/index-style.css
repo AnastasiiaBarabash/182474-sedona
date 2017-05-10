@@ -1,9 +1,49 @@
+html,
 body {
+  min-width: 1280px;
   font-size: 21px;
   line-height: 21px;
   color: black;
   font-weight: 400;
   font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 56px;
+}
+
+.header-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:block;
+    font-size: 0px;
+}
+
+.header-list > li {
+  display: inline-block;
+  width: 239px;
+  text-align: center;
+}
+
+.header-list > li.fake {
+  display: inline-block;
+  width: 244px;
+}
+
+
+.main-picture {
+  height: 509px;
+}
+
+.title {
+  height: 216px;
+
 }
 
 .features-item h2 {
@@ -22,14 +62,6 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
-.index-logo {
-  background: #81b3d2 url("../img/index/logo.png") no-repeat;
-  position: absolute;
-  left: 571px;
-  top: 0px;
-  width: 138px;
-  height: 70px;
-}
 .icon {
   width: 75px;
   height: 75px;
@@ -95,6 +127,140 @@ footer section,
 
 .btn {
   background: transparent url("../img/index/html-academy.png") center center no-repeat;
+  width: 113px;
+  height: 39px;
+}
+
+/*CATALOG*/
+
+body {
+font-size: 14px;
+line-height: 21px;
+color: black;
+font-weight: 400;
+font-family: 'PT Sans', sans-serif;
+}
+
+.header-list li {
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.result-description h2 {
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.index-logo {
+  background: transparent url("../img/index/logo.png") no-repeat;
+  position: absolute;
+  left: 571px;
+  top: 0px;
+  width: 138px;
+  height: 70px;
+}
+
+.catalog-booking section,
+.catalog-booking div {
+  display: inline-block;
+}
+
+.catalog-booking {
+  background: url("../img/catalog/booking-background.jpg") 50% 20%/*приблизно)))*/;
+  width: 1200px;
+  height: 216px;
+}
+
+.real-checkbox {
+  display: none;
+}
+
+.fake-checkbox {
+  background: transparent url("../img/catalog/checkbox.png") left center no-repeat;
+  display: inline-block;
+  width: 26px;
+  height: 22px;
+}
+
+.fake-checkbox.checked {
+  background: transparent url("../img/catalog/checked.png") left center no-repeat;
+}
+
+.found div,
+.down,
+.active-up,
+.sorting-item {
+  display: inline-block;
+}
+
+.active-up {
+  background: transparent url("../img/catalog/up.png") center center no-repeat;
+  width: 11px;
+  height: 10px;
+}
+
+.down {
+  background: transparent url("../img/catalog/down.png") center center no-repeat;
+  width: 11px;
+  height: 10px;
+}
+
+.stars {
+  display: inline-block;
+  background: transparent center center no-repeat;
+}
+
+.five-stars {
+  background-image: url("../img/catalog/four.png");
+  width: 89px;
+  height: 17px;
+}
+
+.three-stars {
+  background-image: url("../img/catalog/three.png");
+  width: 65px;
+  height: 17px;
+}
+
+.two-stars {
+  background-image: url("../img/catalog/two.png");
+  width: 42px;
+  height: 17px;
+}
+
+footer section,
+.copyright span,
+.btn,
+.social-btn {
+  display: inline-block;
+}
+
+.social-btn {
+  width: 46px;
+  height: 48px;
+  background: #81b3d2 center center no-repeat;
+}
+
+.twitter {
+  background-image: url("../img/catalog/twitter.png");
+}
+
+.facebook {
+  background-image: url("../img/catalog/facebook.png");
+}
+
+.youtube {
+  background-image: url("../img/catalog/youtube.png");
+}
+
+.btn {
+  background: transparent url("../img/catalog/html-academy.png") center center no-repeat;
   width: 113px;
   height: 39px;
 }
